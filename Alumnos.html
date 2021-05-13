@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Administrador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Admin1.css">
+  <link rel="stylesheet" type="tect/css" href="fontawesome/css/all.css">
+  <script src="https://kit.fontawesome.com/3fdad84540.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Universidad Iberoamericana</h1>
+        <h5 class="text-center">Laboratorio de Ingenierias</h5>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="opcones2.png" width="30px" alt="menu">
+        </label>
+        <nav class="menu">
+         
+      
+          <ul>
+            <li><a class="btn btn-outline-light" href="Admin1.html">Material</a></li>
+            <li><a class="btn btn-outline-light" href="Alumnos.html">Alumnos</a></li>
+            <li><a class="btn btn-outline-light" href="Buscar.html">Buscar</a></li> 
+            <li><a class="btn btn-outline-light" href="Login.html">Salir</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="lala">
+        <div class="bd-example bd-example-tabs">
+          <div class="row">
+            <div class="col-3">
+              
+              <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link  btn-outline-dark active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Buscar Pedido</a>
+                <a class="nav-link btn-outline-dark" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Agregar Alumno</a>
+                <a class="nav-link btn-outline-dark" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Deudores</a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <nav class="navbar navbar-light bg-light justify-content-between">
+                    <a class="navbar-brand"></a>
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><span class="fas fa-search"></span></button>
+                    </form>
+                  </nav>
+                    <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th colspan="6">Alumno: 2007-4  Gabriela Vanessa Espitia Villamil</th>
+                        </tr>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Tipo</th>
+                          <th scope="col">Cantidad</th>
+                          <th scope="col">Dia del Pedido</th>
+                          <th scope="col">Dia de la Entrega</th>
+                          <th scope="col">Entregado</th>
+                          <th scope="col">No Entregado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>RC-100E</td>
+                          <td>5</td>
+                          <td>05-13-2021</td>
+                          <td>15-13-2021</td>
+                          <td><button type="button" class="btn btn-success">
+                            <span class="fas fa-check-circle"></span>
+                          </button></td>
+                          <td><button type="button" class="btn btn-danger">
+                            <span class="fas fa-exclamation-circle"></span></button></td>
+                          <td><input class="form-control" type="number"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>RC-100K</td>
+                          <td>3</td>
+                          <td>05-13-2021</td>
+                          <td>15-13-2021</td>
+                          <td><button type="button" class="btn btn-success">
+                            <span class="fas fa-check-circle"></span>
+                          </button></td>
+                          <td><button type="button" class="btn btn-danger">
+                            <span class="fas fa-exclamation-circle"></span></button></td>
+                          <td><input class="form-control" type="number"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>RC-10E</td>
+                          <td>25</td>
+                          <td>05-13-2021</td>
+                          <td>15-13-2021</td>
+                          <td><button type="button" class="btn btn-success">
+                            <span class="fas fa-check-circle"></span>
+                          </button></td>
+                          <td><button type="button" class="btn btn-danger">
+                            <span class="fas fa-exclamation-circle"></span></button></td>
+                          <td><input class="form-control" type="number"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>RC-10K</td>
+                          <td>3</td>
+                          <td>05-13-2021</td>
+                          <td>15-13-2021</td>
+                          <td><button type="button" class="btn btn-success">
+                            <span class="fas fa-check-circle"></span>
+                          </button></td>
+                          <td><button type="button" class="btn btn-danger">
+                            <span class="fas fa-exclamation-circle"></span></button></td>
+                          <td><input class="form-control" type="number"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <h5>Componentes</h5>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="validationServer03" class="form-label">Nombre</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                          Escribe el Nombre.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationServer03" class="form-label">apellidos</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                          Escribe los apellidos.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationServerUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3"></span>
+                        <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                          Ingresa tu nombre de Usuario
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                      <label for="validationServer04" class="form-label">Carrera
+                      </label>
+                      <select class="browser-default custom-select" required aria-label="select example">
+                        <option value="">Carrera</option>
+                        <option value="1">Ing. Industrial</option>
+                        <option value="2">Textil</option>
+                        <option value="3">Mecanica</option>
+                    </select>
+                      <div id="validationServer04Feedback" class="invalid-feedback">
+                      </div>
+                      <br>
+                    </div>
+                    <br>
+                    <div class="col-md-9">
+                      <label for="validationServer03" class="form-label">Fecha</label>
+                      <input type="date" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                      <div id="validationServer03Feedback" class="invalid-feedback">
+                        Agregar Fecha.
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationServerUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend3"></span>
+                          <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Ingresa tu nombre de Administrador.
+                            <br>
+                          </div>
+                          <br>
+                        </div>
+                        <br>
+                      </div>
+                    <br>
+                    <br>
+                    <div class="col-12">
+                      <button class="btn btn-danger btn-lg btn-block" type="submit">Agregar Usuario</button>
+                    </div>
+                  </form>              </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <form class="form-row">
+                    <div class="col-10">
+                    <input class="form-control form-control-lg" type="Buscar" placeholder="200747-4" aria-label="Buscar">
+                    </div>
+                    <div class="col">
+                    <button class="btn btn-outline-danger btn-lg" type="submit"><span class="fas fa-search"></span></button>
+                    </div>
+                  </form>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th colspan="6">Usuario: 200747-4 Gabriela Vanessa Espitia</th>
+                      </tr>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Dia del Pedido</th>
+                        <th scope="col">Dia de la Entrega</th>
+                        <th scope="col">Entregado</th>
+                        <th scope="col">No Entregado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">4</th>
+                          <td>RC-10K</td>
+                          <td>3</td>
+                          <td>05-13-2021</td>
+                          <td>15-13-2021</td>
+                          <td><button type="button" class="btn btn-success">
+                            <span class="fas fa-check-circle"></span>
+                          </button></td>
+                          <td><button type="button" class="btn btn-danger">
+                            <span class="fas fa-exclamation-circle"></span></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+</body>
+</html>
